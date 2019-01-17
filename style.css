@@ -1,9 +1,5 @@
-*{
-    font-family: 'Baloo', cursive;
-  }
-  
-  body {
-    background: #ccc;
+ body {
+    background: #ff9900;
   }
   
   table {
@@ -20,4 +16,10 @@
   th {
     background-color: navy;
     color: white;
+  }
+  h1{
+    text-align: center
+  }
+  img{
+    text-align: center
   }
