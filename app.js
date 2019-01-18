@@ -143,8 +143,34 @@ function getRandomInt(min, max) {
 var time = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var cookiesTotal = 0;
 var allPlaces = [];
-var hourlyTotals = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0,0,0, 0, 0];
+var chatForm = document.getElementById('chat-form');
+var hourlyTotals = [];
 
+
+function newStores(event){
+  event.preventDefault();
+  console.log('form sumbitted');
+
+  var locationName = document.getElementById('locationName');
+  var minCustomers = document.getElementById('minCustomers');
+  var maxCustomers = document.getElementById('maxCustomers');
+  var avgCookies = document.getElementById('avgCookies');
+
+
+  if (!event.target.locationName.value || !event.target.minCustomers.value || !event.target.maxCustomers.value || !event.target.avgCookies.value) {
+    return alert('Fields cannot be empty!');      
+  }
+ event.target.locationName.value = null;
+ event.target.minCustomers.value = null;
+ event.target.maxCustomers.value = null;
+ event.target.avgCookies.value = null;
+
+ new newLocation(locationName, minCustomers, maxCustomers, avgCookies);
+ renderAllPlaces();
+ allPlaces.push(this);
+
+}
+chatForm.addEventListener('sumbit', newStores);
 
 CookiesStores.prototype.hourCookies= function (){
     for (var i = 0; i < time.length; i++) {
@@ -172,6 +198,7 @@ new CookiesStores('SeaTacAirport', 3, 24, 1.2);
 new CookiesStores('SeattleCenter', 11, 38, 3.7);
 new CookiesStores('CapitolHill', 20, 38, 2.3);
 new CookiesStores('Alki', 2, 16, 4.6);
+
 
 CookiesStores.prototype.render = function() {
     var trEl = document.createElement('tr');
@@ -219,8 +246,7 @@ function makeHeaderRow() {
     
 
 }
-CookiesStores.prototype.footerRender = function(){
-// function footerRender() {
+function footerRender() {
     var trEl = document.createElement('tr');
     var tdEl = document.createElement('td');
     tdEl.textContent = 'hourTotal';
@@ -267,10 +293,8 @@ function renderAllPlaces(){
         allPlaces[i].hourCookies();
         allPlaces[i].render();
     }
-    allPlaces[0].footerRender();
+    // allPlaces[0].footerRender();
 }  
-
-
 
 
 makeHeaderRow();
