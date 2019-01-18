@@ -150,27 +150,31 @@ var hourlyTotals = [];
 function newStores(event){
   event.preventDefault();
   console.log('form sumbitted');
+placesTable.innerHTML =('');
+  var locationName =event.target.name.value;
+  var minCustomers = parseInt(event.target.min.value);
+  var maxCustomers = parseInt( event.target.max.value);
+  var avgCookies = parseInt(event.target.avg.value);
 
-  var locationName = document.getElementById('locationName');
-  var minCustomers = document.getElementById('minCustomers');
-  var maxCustomers = document.getElementById('maxCustomers');
-  var avgCookies = document.getElementById('avgCookies');
 
+//   if (!event.target.locationName.value || !event.target.minCustomers.value || !event.target.maxCustomers.value || !event.target.avgCookies.value) {
+//     return alert('Fields cannot be empty!');      
+//   }
+ console.log();
+ 
 
-  if (!event.target.locationName.value || !event.target.minCustomers.value || !event.target.maxCustomers.value || !event.target.avgCookies.value) {
-    return alert('Fields cannot be empty!');      
-  }
- event.target.locationName.value = null;
- event.target.minCustomers.value = null;
- event.target.maxCustomers.value = null;
- event.target.avgCookies.value = null;
+ var newStand =new CookiesStores(locationName, minCustomers, maxCustomers, avgCookies);
+ event.target.name.value = null;
+ event.target.min.value = null;
+ event.target.max.value = null;
+ event.target.avg.value = null;
 
- new newLocation(locationName, minCustomers, maxCustomers, avgCookies);
+ newStand.hourCookies();
  renderAllPlaces();
- allPlaces.push(this);
+footerRender();
 
 }
-chatForm.addEventListener('sumbit', newStores);
+chatForm.addEventListener('submit', newStores);
 
 CookiesStores.prototype.hourCookies= function (){
     for (var i = 0; i < time.length; i++) {

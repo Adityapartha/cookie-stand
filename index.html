@@ -4,13 +4,14 @@
 <head>
 
   <meta charset="utf-8">
-  <link rel = "stylesheet" type="text/css" href="style.css"
- <title Cookie-stand></title>
-<img src ="https://github.com/codefellows/seattle-201d44/blob/master/class-06-dom-objects-domain_modeling/assets/salmon.png?raw=true" alt = "Salmons">
- 
+  <link rel = "stylesheet" type="text/css" href="style.css"/>
+ <title> Cookie-stand</title>
+
 </head>
 
 <body>
+  <img src ="https://github.com/codefellows/seattle-201d44/blob/master/class-06-dom-objects-domain_modeling/assets/salmon.png?raw=true" alt = "Salmons"/>
+ 
   <h1>Salmons Cookie Project</h1>
  
    
@@ -22,23 +23,23 @@
     <legend>New location</legend>
 
     <label for ="locationName">Location: </lablel>
-    <input name ="location" type = "text" size= "25"/>
+    <input name ="name" type = "text" size= "25" required />
 
     <label for ="minCustomers">MinimumCustomers:</label>
-    <input name = "says" type= "text" size="8"/>
+    <input name = "min" type= "text" size="8"/>
 
     <label for = "maxCustomers">MaximumCustomers</label>
-    <input  name= "says" type = "text" size="8">
+    <input  name= "max" type = "text" size="8">
 
     <label for = "avgCookies">AverageCookies</label>
-    <input name = "says" type = "text" size = "8">
+    <input name = "avg" type = "text" size = "8">
 
     <button type = "submit">Create new location!</button>
   </fieldset>
+   <button id ="clean-chat-list">Clean all new location!</button>
   </form>
 
-  <button id ="clean-chat-list">Clean all new location!</button>
-  <ul id="chat-list"></ul> -->
+ 
   <script src="app.js"></script>
 </body>
 
