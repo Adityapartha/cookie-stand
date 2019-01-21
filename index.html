@@ -1,46 +1,82 @@
 <!DOCTYPE html>
+
 <html>
-
-<head>
-
-  <meta charset="utf-8">
-  <link rel = "stylesheet" type="text/css" href="style.css"/>
- <title> Cookie-stand</title>
-
-</head>
-
-<body>
-  <img src ="https://github.com/codefellows/seattle-201d44/blob/master/class-06-dom-objects-domain_modeling/assets/salmon.png?raw=true" alt = "Salmons"/>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>salmon Cookie-stand</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <title> Cookie-stand</title>
+    </head>
+    
+    <body>
+        
+        <header> 
+           <h1>Salmon Cookies</h1>
+            <nav> 
+              <img src ="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/salmon.png?raw=true" alt = "Salmons" id = #Salmons/>
+               </nav>
+                    <table id= "location"></table>
+                  <ul id="Pike" ></ul>
+                  <form id = "chat-form">
+                    <fieldset>
+                      <legend>New location</legend>
+                  
+                      <label for ="locationName">Location: </lablel>
+                      <input name ="name" type = "text" size= "25" />
+                  
+                      <label for ="minCustomers">MinimumCustomers:</label>
+                      <input name = "min" type= "text" size="8"/>
+                  
+                      <label for = "maxCustomers">MaximumCustomers</label>
+                      <input  name= "max" type = "text" size="8">
+                  
+                      <label for = "avgCookies">AverageCookies</label>
+                      <input name = "avg" type = "text" size = "8">
+                  
+                      <button type = "submit">Create new location!</button>
+                    </fieldset>
+                     <button id ="clean-chat-list">Clean all new location!</button>
+                  </form>  
  
-  <h1>Salmons Cookie Project</h1>
- 
-   
-  <table id= "location"></table>
 
-   <ul id="Pike" ></ul>
-<form id = "chat-form">
-  <fieldset>
-    <legend>New location</legend>
+              
+            
 
-    <label for ="locationName">Location: </lablel>
-    <input name ="name" type = "text" size= "25" required />
+        </header>
 
-    <label for ="minCustomers">MinimumCustomers:</label>
-    <input name = "min" type= "text" size="8"/>
+        <main>
+            <div>
+            <img src ="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg?raw=true" alt = "Salmon" id = #Salmon/>
+             </div>
+            <ul>
+              <ol>
+                <li>
+                    <img src="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/cutter.jpeg?raw=true" alt="sub-banner" title="sub-banner" /> 
+                </li>
+                <li>
+                    <img src="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/chinook.jpg?raw=true" alt="sub-banner" title="sub-banner" /> 
+                </li>
+                <li>
+                    <img src="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/shirt.jpg?raw=true" alt="feat-section-banner" title="feat-section-banner" />
+                </li>
+                </ol>
+            </ul>
 
-    <label for = "maxCustomers">MaximumCustomers</label>
-    <input  name= "max" type = "text" size="8">
+            <section>
+                   <img src="https://github.com/codefellows/seattle-201d44/blob/master/class-09-css_wireframe_part_1/lab/assets/family.jpg?raw=true" alt="sub-banner" title="sub-banner" />
+              
+                <div>
+              <p>Our cookies are home made fresh out of the oven. We also hand craft our own cookies. Our salmon cookies doesn't have any artificial flavor or any harmful chemical it is all caught in the wild. Our salmon cookies are a family business from Washington since 1987. In few months we will be release our first salmon cookie t-shirt order now before it runs out of stock. </p>
+               
+            </section>
 
-    <label for = "avgCookies">AverageCookies</label>
-    <input name = "avg" type = "text" size = "8">
+        </main>
 
-    <button type = "submit">Create new location!</button>
-  </fieldset>
-   <button id ="clean-chat-list">Clean all new location!</button>
-  </form>
+        <footer>
 
- 
-  <script src="app.js"></script>
-</body>
+        </footer>
+      <script src="app.js"></script>
+    </body>
 
 </html>

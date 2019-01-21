@@ -1,11 +1,53 @@
- body {
-    background: #ff9900;
- }
-  
-  table {
+body{
+    font-family: Helvetica, sans-serif;
+    background: white;
+}
+
+
+header {
+    background: #FA8072;
+    height: 100px;
+}    
+nav img{
+    float: left;
+    margin-top: -80px;
+    margin-right: 50px;
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 90px; 
+}
+ div img {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+main ul li{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+section img {
+    display: block;
+    margin-left: 80px;
+    margin-right: auto;
+    list-style: none;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+table {
+    position: static;
     border: 10px solid black;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1950px;
     background:#ff9900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -19,32 +61,32 @@
   }
   
   th {
-    background-color:red;
+    background-color: #FA8072;
     color: rgb(7, 7, 7);
     font-size: 20px;
   }
-  h1{
-    text-decoration: underline dotted yellow;
-    font-size: 50px;
-    text-align: center; 
+p{
     font-style: italic;
-  }
-  img{
+    font-size: 27px;
+    line-height: 30px;
+    height: 300px;
+    overflow: auto;
+    float: right;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
- legend{
-   text-align: center;
-   font-size: 20px;
-   font-style: italic;
- }
-  label{
-    margin-left: 60px;
-    margin-right: auto;
-  }
-  button{
-   background-color: red;
-   color: black;
-   font-size: 15px;
-  }
+    margin: -1200px 2% 0 2%;
+    width: 70%;
+} 
+button{
+    border: #04aaf7;
+    padding: 10px 30px;
+    background: #FA8072;
+    color: black;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+button:hover{
+background: blue;
+}
