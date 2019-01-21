@@ -8,37 +8,7 @@ header {
     background: #FA8072;
     height: 100px;
 }    
-nav img{
-    float: left;
-    margin-top: -80px;
-    margin-right: 50px;
-    width: 200px;
-}
-nav ul li{
-    display: inline-block;
-    margin-top: 40px;
-    margin-right: 90px; 
-}
- div img {
-    width: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-main ul li{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-}
-section img {
-    display: block;
-    margin-left: 80px;
-    margin-right: auto;
-    list-style: none;
-}
-h1{
+ h1{
     font-size: 50px;
     text-align: center;
 }
@@ -47,7 +17,7 @@ table {
     border: 10px solid black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1950px;
+    margin-top: 200px;
     background:#ff9900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -63,9 +33,8 @@ table {
   th {
     background-color: #FA8072;
     color: rgb(7, 7, 7);
-    font-size: 20px;
-  }
-p{
+    font-size: 20px;  
+/* p{
     font-style: italic;
     font-size: 27px;
     line-height: 30px;
@@ -74,7 +43,7 @@ p{
     float: right;
     display: block;
     margin: -1200px 2% 0 2%;
-    width: 70%;
+    width: 70%; */
 } 
 button{
     border: #04aaf7;
